@@ -1,16 +1,33 @@
+/* Fonts */
+
 @font-face {
   font-family: 'arcade';
   src: url(./fonts/ARCADECLASSIC.TTF);
 }
 
+/* Main page */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .portrait {
-  height: 100px;
+  width: 200px;
 }
 
 .site-title {
   font-family: 'arcade';
   font-size: 2.5em;
 }
+
+/* Rainbow hover <3 */
 
 .site-title:hover {
   -webkit-animation:rainbow 1s infinite;
@@ -69,4 +86,27 @@
   80% {color: #0000ff;}
   90% {color: #8000ff;}
   100% {color: #ff0080;}
+  }
+
+  @media only screen and (min-width: 600px) {
+    .responsive {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    body {
+      margin: 50px;
+      background-color: white;
+      justify-content: flex-start;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .portrait {
+      padding-right: 12px;
+      width: 100px;
+    }
   }
