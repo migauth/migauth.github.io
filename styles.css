@@ -1,15 +1,14 @@
 /* Fonts */
-
 @font-face {
-  font-family: 'arcade';
+  font-family: "arcade";
   src: url(./fonts/ARCADECLASSIC.TTF);
 }
 
 /* Main page */
-
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 header {
@@ -18,95 +17,117 @@ header {
   align-items: center;
 }
 
-.portrait {
-  width: 200px;
+nav {
+  /* border: solid green; */
+  display: flex;
 }
 
-.site-title {
-  font-family: 'arcade';
-  font-size: 2.5em;
+.portrait {
+  width: 200px;
+  cursor: grab;
+}
+
+.site-title, button {
+  font-family: "arcade";
+  font-size: 1.8em;
+}
+
+.nav-list {
+  display: flex;
+  padding: 20px;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 8px;
+  cursor: grab;
+  outline: inherit;
+  border: 2px solid transparent; /* Add transparent border initially */
+  border-radius: 5%;
+}
+
+button:hover, .site-title:hover {
+  animation: rainbow 2s infinite;
+  border-color: transparent; /* Make the border transparent on hover */
+  cursor: grab;
+}
+
+i {
+  font-size: 4em;
+  padding-right: 18px;
+}
+
+i:hover {
+  animation: rainbow 2s infinite;
+}
+
+#about {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /* Rainbow hover <3 */
+@keyframes rainbow {
+  0% { color: #ff0000; border-color: #ff0000; }
+  10% { color: #ff8000; border-color: #ff8000; }
+  20% { color: #ffff00; border-color: #ffff00; }
+  30% { color: #80ff00; border-color: #80ff00; }
+  40% { color: #00ff00; border-color: #00ff00; }
+  50% { color: #00ff80; border-color: #00ff80; }
+  60% { color: #00ffff; border-color: #00ffff; }
+  70% { color: #0080ff; border-color: #0080ff; }
+  80% { color: #0000ff; border-color: #0000ff; }
+  90% { color: #8000ff; border-color: #8000ff; }
+  100% { color: #ff0080; border-color: #ff0080; }
+}
 
-.site-title:hover {
-  -webkit-animation:rainbow 1s infinite;
-  -ms-animation:rainbow 1s infinite;
-  -o-animation:rainbow 1s infinite;
-  animation:rainbow 1s infinite;
-  }
-  @-webkit-keyframes rainbow {
-  0% {color: #ff0000;}
-  10% {color: #ff8000;}
-  20% {color: #ffff00;}
-  30% {color: #80ff00;}
-  40% {color: #00ff00;}
-  50% {color: #00ff80;}
-  60% {color: #00ffff;}
-  70% {color: #0080ff;}
-  80% {color: #0000ff;}
-  90% {color: #8000ff;}
-  100% {color: #ff0080;}
-  }
-  @-ms-keyframes rainbow {
-  0% {color: #ff0000;}
-  10% {color: #ff8000;}
-  20% {color: #ffff00;}
-  30% {color: #80ff00;}
-  40% {color: #00ff00;}
-  50% {color: #00ff80;}
-  60% {color: #00ffff;}
-  70% {color: #0080ff;}
-  80% {color: #0000ff;}
-  90% {color: #8000ff;}
-  100% {color: #ff0080;}
-  }
-  @-o-keyframes rainbow {
-  0% {color: #ff0000;}
-  10% {color: #ff8000;}
-  20% {color: #ffff00;}
-  30% {color: #80ff00;}
-  40% {color: #00ff00;}
-  50% {color: #00ff80;}
-  60% {color: #00ffff;}
-  70% {color: #0080ff;}
-  80% {color: #0000ff;}
-  90% {color: #8000ff;}
-  100% {color: #ff0080;}
-  }
-  @keyframes rainbow {
-  0% {color: #ff0000;}
-  10% {color: #ff8000;}
-  20% {color: #ffff00;}
-  30% {color: #80ff00;}
-  40% {color: #00ff00;}
-  50% {color: #00ff80;}
-  60% {color: #00ffff;}
-  70% {color: #0080ff;}
-  80% {color: #0000ff;}
-  90% {color: #8000ff;}
-  100% {color: #ff0080;}
+/* Responsive Styles */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 50px;
+    background-color: white;
+    /* border: solid black; */
   }
 
-  @media only screen and (min-width: 600px) {
-    .responsive {
-      display: flex;
-      flex-direction: row;
-    }
-  
-    body {
-      margin: 50px;
-      background-color: white;
-      justify-content: flex-start;
-    }
-
-    header {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .portrait {
-      padding-right: 12px;
-      width: 100px;
-    }
+  .top {
+    /* border: solid rgb(236, 18, 18); */
+    display: flex;
+    justify-content: space-around;
   }
+
+  .portrait {
+    padding-right: 12px;
+    width: 100px;
+  }
+
+  .nav-list {
+    width: 50vw;
+  }
+
+  .main-container {
+    margin-left: 15%;
+    padding-top: 50px;
+    width: 50%;
+    /* border: solid rgb(213, 193, 11); */
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fadeInAnimation ease 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
