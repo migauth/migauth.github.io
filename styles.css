@@ -27,6 +27,11 @@ nav {
   cursor: grab;
 }
 
+.home-portrait {
+  height: 500px;
+  border-radius: 100%;
+}
+
 .site-title, button {
   font-family: "arcade";
   font-size: 1.8em;
@@ -37,6 +42,10 @@ nav {
   padding: 20px;
   width: 100vw;
   justify-content: space-around;
+}
+
+a {
+  all: unset;
 }
 
 button {

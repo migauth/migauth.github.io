@@ -21,7 +21,7 @@
   </head>
   <body onload="togglePage('home-page')">
     <div class="responsive">
-      <div class="top" >
+      <div class="top">
         <header>
           <img
             src="./images/pixelme.jpg"
@@ -29,7 +29,9 @@
             class="portrait"
             onclick="togglePage('home-page')"
           />
-          <span onclick="togglePage('home-page')" class="site-title">Michael Morrow</span>
+          <span onclick="togglePage('home-page')" class="site-title"
+            >Michael Morrow</span
+          >
         </header>
 
         <nav>
@@ -42,34 +44,42 @@
       </div>
 
       <main>
+
         <div class="main-container">
-
-
-          <div id="home-page" class="page">Home page</div>
-
+          <div id="home-page" class="page">
+            <img src="./images/me.jpeg" alt="a picutre of me being swag" class="home-portrait" />
+          </div>
 
           <div id="about" class="page" style="display: none">
             <div>
               <h2>Links</h2>
-              <i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-              <i class="fa-regular fa-envelope"></i>
+              <a href="https://github.com/migauth" target="”_blank”"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/michael-gauthier-a502b799/"
+                target="”_blank”"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="mailto:mikegauthier222@hotmail.com"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
             </div>
             <hr />
             <p>
-              Contray to the font, I do not make video games (yet). I play them
-              a lot though. Full stack junior web developer.
+              Full stack junior web developer. Strange creature drawer
+              extrodinare. Pixel art journeyman. Intermidate yoyo thrower. Likes
+              spam. Big nerd energy.
             </p>
           </div>
-
 
           <div id="resume" class="page" style="display: none">
             <p>here is my resume</p>
           </div>
 
-
           <div id="gifs" class="page" style="display: none">
             <p>gifs page</p>
+            <img src="./images/jakegif.gif" alt="" />
           </div>
         </div>
       </main>
