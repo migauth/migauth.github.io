@@ -71,13 +71,13 @@ canvas {
   width: 500px;
 }
 
-.main-container {
+/* .main-container {
   border: solid blue;
 }
 
 #gifs {
   border: solid red;
-}
+} */
 
 button {
   background: none;
@@ -192,7 +192,7 @@ i:hover {
     margin: auto;
     padding-top: 50px;
     width: 80vw;
-    border: solid rgb(213, 193, 11);
+    /* border: solid rgb(213, 193, 11); */
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
