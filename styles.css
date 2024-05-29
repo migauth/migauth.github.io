@@ -27,11 +27,9 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   z-index: -1; /* This puts the canvas behind all other elements */
-
 }
 
 #resume {
@@ -67,33 +65,12 @@ a {
 
 .first-gif {
   width: 50%;
+  animation: rainbow 2s infinite;
+  border-color: transparent; /* Make the border transparent on hover */
+  border: 2px solid transparent; /* Add transparent border initially */
+  border-radius: 5%;
 }
 
-/* main {
-  border: solid red;
-} */
-
-/* .main-container {
-  border: solid green;
-  width: 50vw;
-} */
-
-/* #home-page {
-  width: 100vw;
-  border: solid yellowgreen;
-} */
-
-canvas {
-  width: 500px;
-}
-
-/* .main-container {
-  border: solid blue;
-}
-
-#gifs {
-  border: solid red;
-} */
 
 button {
   background: none;

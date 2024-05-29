@@ -2,7 +2,6 @@
 
 function togglePage(currentPage) {
   
-  const homePage = document.getElementById('home-page');
   const pages = document.querySelectorAll('.page');
 
   pages.forEach(page => {
