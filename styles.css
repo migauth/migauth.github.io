@@ -34,6 +34,8 @@ nav {
 
 #resume {
   cursor: grab;
+  font-family: 'arcade';
+  font-size: 1.5em;
 }
 
 .portrait {
