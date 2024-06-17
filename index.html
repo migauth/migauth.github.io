@@ -20,7 +20,7 @@
     />
   </head>
   <body onload="togglePage('home-page')">
-    <canvas id="canvas1"></canvas>  
+    <canvas id="canvas1"></canvas>
     <div class="responsive">
       <div class="top">
         <header>
@@ -40,45 +40,103 @@
             <button onclick="togglePage('about')">ABOUT</button>
             <button onclick="togglePage('resume')">RESUME</button>
             <button onclick="togglePage('projects')">PROJECTS</button>
-            <button onclick="window.open('https://medium.com/@mikegauthier222', '_blank');">BLOG</button>
+            <button
+              onclick="window.open('https://medium.com/@mikegauthier222', '_blank');"
+            >
+              BLOG
+            </button>
           </ul>
         </nav>
       </div>
 
       <main>
-
         <div class="main-container">
-          <div id="home-page" class="page">
-          </div>
+          <div id="home-page" class="page"></div>
 
           <div id="about" class="page" style="display: none">
-            <div>
+            <div class="page-content">
               <h2>Links</h2>
               <a href="https://github.com/migauth" target="”_blank”"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github about-icon"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/michael-gauthier-a502b799/"
                 target="”_blank”"
-                ><i class="fa-brands fa-linkedin-in"></i
+                ><i class="fa-brands fa-linkedin-in about-icon"></i
               ></a>
               <a href="mailto:mikegauthier222@hotmail.com"
-                ><i class="fa-regular fa-envelope"></i
+                ><i class="fa-regular fa-envelope about-icon"></i
               ></a>
+              <hr />
+              <p>
+                Full stack web developer blending expertise in inclusive education
+                and creative practices. Emphasizes the creation of effective,
+                adaptable, and test-focused code. Values community engagement and
+                effective communication. Loves pixel art, pizza, and sushi.
+              </p>
             </div>
-            <hr />
-            <p>
-              Full stack web developer blending expertise in inclusive education and creative practices. Emphasizes the creation of effective, adaptable, and test-focused code. Values community engagement and effective communication. Loves pixel art, pizza, and sushi.
-            </p>
           </div>
 
           <div id="resume" class="page" style="display: none">
-            <a id='resume' href="./documents/Michael_Gauthier_Resume.pdf" download>click here to download my resume</a>
+            <div>
+              <a 
+              id="resume"
+              href="./documents/Michael_Gauthier_Resume.pdf"
+              download
+              >click here to download my resume</a
+              >
+            </div>
           </div>
 
           <div id="projects" class="page" style="display: none">
-            <p>Coming soon</p>
-            <img class="first-gif" src="./images/jakegif.gif" alt="" />
+            <!-- <p>Coming soon</p>
+            <img class="first-gif" src="./images/jakegif.gif" alt="" /> -->
+
+            <!-- Schmovies -->
+            <div class="project">
+              <h2>
+                <span class="small-git"
+                  ><a
+                    href="https://github.com/migauth/schmovies"
+                    target="”_blank”"
+                    >Schmovies</a
+                  >
+                </span>
+              </h2>
+              <img
+                class="first-gif"
+                src="./images/schmovies.gif"
+                alt=""
+                onclick=""
+              />
+              <p>
+                The movie suggestion app! Take a quiz to find a movie to watch,
+                or browse through a selction of movies on the app. Stack
+                includes ReactJS, Django/Python, and PostgresSQL database
+              </p>
+            </div>
+
+            <div class="project">
+              <h2>
+                <span class="small-git"
+                  ><a
+                    href="https://github.com/migauth/tweeter-lhl"
+                    target="”_blank”"
+                    >Tweeter</a
+                  >
+                </span>
+              </h2>
+              <img
+                class="first-gif"
+                src="./images/tweeter.gif"
+                alt=""
+                onclick=""
+              />
+              <p>
+                Tweeter is a simple, single-page Twitter clone that showcases frontend skills. Made with the basics: Javascript, HTML and CSS.
+              </p>
+            </div>
+            
           </div>
         </div>
       </main>

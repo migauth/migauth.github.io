@@ -58,6 +58,8 @@ button {
   padding: 20px;
   width: 100vw;
   justify-content: space-around;
+  /* border: solid red; */
+
 }
 
 a {
@@ -65,11 +67,11 @@ a {
 }
 
 .first-gif {
-  width: 50%;
+  width: 100%;
   animation: rainbow 2s infinite;
   border-color: transparent; /* Make the border transparent on hover */
   border: 2px solid transparent; /* Add transparent border initially */
-  border-radius: 5%;
+  border-radius:  10px;
 }
 
 
@@ -92,7 +94,7 @@ button:hover,
 }
 
 i {
-  font-size: 4em;
+  /* font-size: 4em; */
   padding-right: 18px;
 }
 
@@ -109,6 +111,33 @@ i:hover {
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+
+.about-icon {
+  font-size: 4em;
+}
+
+.small-git {
+  font-size: 1.5em;  
+}
+
+.small-git:hover {
+  animation: rainbow 2s infinite;
+  cursor: grab; 
+}
+
+.page-content{
+  padding: 2%;
+  /* border: solid rgba(200, 200, 200, .9) ; */
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .9)
+}
+
+.project{
+  padding: 2%;
+  /* border: solid rgba(200, 200, 200, .9) ; */
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .9)
 }
 
 /* Rainbow hover <3 */
