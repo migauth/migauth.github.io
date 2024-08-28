@@ -29,7 +29,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const trailLength = 90;
+const trailLength = 5;
 const trail = [];
 
 class Square {
